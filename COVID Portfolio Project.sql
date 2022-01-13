@@ -107,7 +107,7 @@ JOIN COVIDPortfolioProject..CovidVaccinations AS CovidVaccination ON
 WHERE CovidDeaths.continent is not null
 )
 
-SELECT *, (RollingPeopleVaccinated/population)*100 AS gay
+SELECT *, (RollingPeopleVaccinated/population)*100 AS PercentPopulationVaccinated
 FROM POPvsVAC
 
 -- Temp table
