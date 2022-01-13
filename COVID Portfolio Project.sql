@@ -132,7 +132,7 @@ JOIN COVIDPortfolioProject..CovidVaccinations AS CovidVaccination ON
 	and CovidDeaths.date = CovidVaccination.date
 WHERE CovidDeaths.continent is not null
 
-SELECT *, (RollingPeopleVaccinated/population)*100 AS gay
+SELECT *, (RollingPeopleVaccinated/population)*100 AS PercentPopulationVaccinated
 FROM #PercentPopulationVaccinated
 
 -- Creating view to store data for later visualizations 
